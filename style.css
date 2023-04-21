@@ -36,8 +36,7 @@ h1 {
     height: 6rem;
     width: 6rem;
     padding: 0.5rem;
-    animation: rss_rotation 2s linear infinite;
-    animation-fill-mode:forwards;
+    
 }
 
 .foto-perfil {
@@ -86,11 +85,7 @@ h1 {
 
 }
 
-.icon_only:hover{
-    transform: rotate(360deg);
-    transition: transform 1s ease-in-out;
+.img-redes:hover{
+    animation: rss_rotation  2s infinite;
+    
 }
-
-.icon_only:active {
-    transition: transform 0s;
-  }
