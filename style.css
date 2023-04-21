@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 3rem;
+}
+
+.cuadro-todo {
+    background-color: gainsboro;
+    border: 0.5px solid;
+}
+
+h2 {
+    text-indent: 1rem;
+    color: rgb(205, 0, 51);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2:hover{
+    animation: color_switch 4s linear;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.img-redes {
+    height: 6rem;
+    width: 6rem;
+    padding: 0.5rem;
+    animation: rss_rotation 2s linear infinite;
+    animation-fill-mode:forwards;
+}
+
+.foto-perfil {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 5px;
+    border: 0.5px solid;
+}
+
+.foto-perfil:hover {
+    height: 20rem;
+    width: 20rem;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes color_switch {
+    0%   {color: rgb(205, 0, 51); left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color: rgb(205, 0, 51); left:0px; top:0px;}
+}
+
+
+@keyframes rss_rotation {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+
+.div-foto-perfil {
+    display: flex;
+    justify-content: center;
+
+}
+
+.caja-redes {
+    border: 0.5px solid;
+    background-color: antiquewhite;
+
+}
+
+.div-iconos-rss {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon_only:hover{
+    transform: rotate(360deg);
+    transition: transform 1s ease-in-out;
+}
+
+.icon_only:active {
+    transition: transform 0s;
+  }
